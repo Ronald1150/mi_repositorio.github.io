@@ -1,5 +1,96 @@
-.isquierda {
-  height: 100px;
-  width: 50px;
-  background: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+header {
+  background: var(--accent);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+header p {
+  font-size: 1.1rem;
+}
+.highlight-banner {
+  background-color: var(--highlight);
+  text-align: center;
+  padding: 0.75rem 1rem;
+  font-weight: bold;
+  color: var(--text);
+}
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+section {
+  margin-bottom: 2rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+section h2 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+section p {
+  margin-bottom: 0.5rem;
+}
+.contact a {
+  display: block;
+  margin-bottom: 0.75rem;
+  text-decoration: none;
+  color: var(--accent);
+  transition: all 0.3s ease;
+}
+.contact a:hover {
+  text-decoration: underline;
+}
+.cta {
+  background-color: var(--secondary);
+  color: white;
+  padding: 1rem 2rem;
+  border-left: 5px solid var(--highlight);
+  font-style: italic;
+  border-radius: 0.5rem;
+}
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+img.hero {
+  max-width: 100%;
+  border-radius: 1rem;
+  margin-top: 2rem;
+}
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+}
+.boton_descarga {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: black;
+  margin-left: 80px;
+  padding: auto;
 }
